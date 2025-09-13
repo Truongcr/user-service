@@ -11,6 +11,7 @@ public class UserController {
     public UserController(UserRepository repo) {
         System.out.println("UserController initialized with repo: " + repo);
         System.out.println("UserController initialized with repo: " + repo);
+        System.out.println("UserController initialized with repo: " + repo);
         this.repo = repo;
     }
 
