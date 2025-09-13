@@ -11,7 +11,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    docker.build('myapp:latest')
+                    docker.build('user-service-0.0.1-SNAPSHOT:latest')
                 }
             }
         }
@@ -19,7 +19,7 @@ pipeline {
         stage('Run Container') {
             steps {
                 script {
-                    docker.image('myapp:latest').run('-d -p 8081:8080')
+                    docker.image('user-service-0.0.1-SNAPSHOT:latest').run('-d -p 8081:8080')
                 }
             }
         }
