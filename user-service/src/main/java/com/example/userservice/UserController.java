@@ -9,6 +9,7 @@ public class UserController {
     private final UserRepository repo;
 
     public UserController(UserRepository repo) {
+        System.out.println("UserController initialized with repo: " + repo);
         this.repo = repo;
     }
 
